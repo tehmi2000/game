@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/assets/icofont/icofont.min.css">
+    <link rel="stylesheet" href="/css/game.css">
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    <div class="top-container">
+        <div class="score-board">
+            <div id="player-id" class="player-id">Player ID</div>
+
+            <div>
+                <span class="label">Health</span>
+                <span class="life bar">
+                    <span class="value"></span>
+                </span>
+            </div>
+            
+            <div>
+                <span class="label">Damage</span>
+                <span class="damage bar">
+                    <span class="value"></span>
+                </span>
+            </div>
+        </div>
+
+        <button class="icofont- pause-btn"></button>
+    </div>
+
+    <div data-notification>
+    </div>
+
+    
+    <div id="plane-camera" class="plane-camera"></div>
+
+    <div class="receiver-port">
+
+    </div>
+
+    <!-- <div id="plane" class="plane">
+        <div class="plane-head"></div>
+        <div class="plane-body">
+            <div class="plane-tail"></div>
+            <div class="plane-cockpit"></div>
+            <div class="plane-wings"></div>
+            <div class="fire wing-fire"></div>
+        </div>
+        <div class="plane-exhaust"></div>
+        <div class="fire tail-fire"></div>
+        
+    </div> -->
+
+    <div class="monitor">
+        <div class="steering"></div>
+
+        <div class="radar-display">
+            <span class="coords-x">x : 0</span>
+            <span class="coords-y">y : 0</span>
+        </div>
+
+        <div class="speed-display">
+            <span class="speed">0</span>
+            <span class="speed-unit">mph</span> 
+        </div>
+
+        <div class="orientation-display">
+            <div class="angle-unit">0&deg;</div>
+            <div class="oriental-plane"></div>
+        </div>
+    </div>
+
+    <div class="joystick"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/lib/greensock-js/src/minified/TweenMax.min.js"></script>
+    <script src="js/lib/matter-js/build/matter.js"></script>
+    <script src="/js/game.js"></script>
+</body>
+</html>
